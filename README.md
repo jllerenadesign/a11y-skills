@@ -11,11 +11,13 @@ Works with Claude Code, Cursor, Copilot, Codex, and any agent that supports the 
 ## Skills
 
 ### `accessibility-design`
+
 Audit screens, components, and design systems in **Figma, Framer, or Webflow** before code handoff.
 
 Covers: color contrast, typography, touch targets, focus indicators, heading hierarchy, annotation for developer handoff, and RTL/Arabic design rules.
 
 ### `accessibility-code`
+
 Audit and fix accessibility issues in any **live URL or codebase** — HTML, React, Vue, Next.js, Svelte, Framer sites, Webflow exports, or plain HTML/CSS.
 
 Stack-agnostic: analyzes the rendered DOM output, not the source framework.
@@ -24,9 +26,9 @@ Stack-agnostic: analyzes the rendered DOM output, not the source framework.
 
 ## Install
 
-```bash
-npx skills add https://github.com/jllerena1/a11y-skills --skill accessibility-design
-npx skills add https://github.com/jllerena1/a11y-skills --skill accessibility-code
+```
+npx skills add https://github.com/jllerenadesign/a11y-skills --skill accessibility-design
+npx skills add https://github.com/jllerenadesign/a11y-skills --skill accessibility-code
 ```
 
 ---
@@ -34,8 +36,9 @@ npx skills add https://github.com/jllerena1/a11y-skills --skill accessibility-co
 ## Usage
 
 ### Design audit (Figma, Framer, Webflow)
+
 ```
-/audit          → Full scored audit of a screen or component
+/audit           → Full scored audit of a screen or component
 /audit-component → Single component audit
 /annotate        → Generate handoff annotations for developers
 /check-contrast  → Color contrast check only
@@ -44,12 +47,13 @@ npx skills add https://github.com/jllerena1/a11y-skills --skill accessibility-co
 ```
 
 ### Code / production audit (any URL or file)
+
 ```
-/audit <url>          → Full WCAG 2.2 AA audit with score
-/fix <file>           → Targeted fixes, no rewrites
-/audit-component      → Single component audit
-/quick <url>          → Critical issues only, fast scan
-/audit-rtl <url>      → EN/AR bilingual and RTL audit
+/audit <url>     → Full WCAG 2.2 AA audit with score
+/fix <file>      → Targeted fixes, no rewrites
+/audit-component → Single component audit
+/quick <url>     → Critical issues only, fast scan
+/audit-rtl <url> → EN/AR bilingual and RTL audit
 ```
 
 ---
